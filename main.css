@@ -1,0 +1,11 @@
+#mainHeader {
+	font-size: 500%;
+	color: dimgray;
+}
+
+header {
+  position: relative;
+  margin-top: 20%;
+  text-align: center;
+  color: gray;
+}
