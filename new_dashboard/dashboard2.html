@@ -7,7 +7,7 @@
 	<!-- Bootstrap Stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Custom Stylesheet -->
-	<link rel="stylesheet" href="dashboard.css">
+	<link rel="stylesheet" href="dashboard2.css">
 	<title>Dashboard</title>
 </head>
 <body>
@@ -69,20 +69,17 @@
 </header>
 <div id="main-content" class="container-fluid">
 	<div id="resolutioncard" class="col-lg-8 col-md-8 col-sm-12">
-		<p>My Resolutions</p>
+		<p class="cardtitle">My Resolutions</p>
 		<div class="dropdown">
   		<button class="btn btn-secondary dropdown-toggle resolutionmenu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
   			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     			<a class="dropdown-item" href="#">2022</a>
     			<a class="dropdown-item" href="#">2021</a>
   			</div>
-		</div>
-			
-		
-  		</div>
+		</div>			
 	</div>
 	<div class="myplanscard col-md-4 col-sm-12">
-		<p>My Plans</p>
+		<p class="cardtitle">My Plans</p>
 		<div class="dropdown">
   		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
   			<div class="dropdown-menu plansmenu" aria-labelledby="dropdownMenuButton">
@@ -93,7 +90,7 @@
 		
 	</div>
 	<div class="myprogresscard col-md-8 col-sm-12">
-		<p>My Progress</p>
+		<p class="cardtitle">My Progress</p>
 		<div class="dropdown">
   		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
   			<div class="dropdown-menu progressmenu" aria-labelledby="dropdownMenuButton">
@@ -104,7 +101,14 @@
 		
 	</div>
 	<div class="myschedulecard col-md-4 col-sm-12">
-		<p>My Schedule</p>
+		<p class="cardtitle">My Schedule</p>
+		<div class="dropdown">
+  		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Daily</button>
+  			<div class="dropdown-menu progressmenu" aria-labelledby="dropdownMenuButton">
+    			<a class="dropdown-item" href="#">Weekly</a>
+    			<a class="dropdown-item" href="#">Monthly</a>
+  			</div>
+		</div>
 	</div>
 
 	<!-- Timer Dropup Menu -->
