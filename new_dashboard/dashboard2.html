@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="dashboard.css">
+	<title>Dashboard</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<a class="navbar-brand companyname" href="#">Company</a>
+
+  			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+   				 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     				 <li class="nav-item active">
+        				<a class="nav-link" href="dashboard2.html">Dashboard <span class="sr-only">(current)</span></a>
+      				</li>
+				    <li class="nav-item">
+					    <a class="nav-link" href="#">Archives</a>
+				    </li>
+				    <li class="nav-item">
+				        <a class="nav-link" href="#">Contact Us</a>
+				    </li>		      
+				</ul>
+
+    <!-- Search bar and icon -->
+    <form class="form-inline my-2 my-lg-0">
+    	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     	<button type="button" class="btn btn-default btn-lg">
+  			 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+			  	<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+			</svg>
+		</button>       	
+    </form>
+
+    <!-- Notifications Icon -->
+    <button type="button" class="btn btn-light">
+    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+			<path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+		</svg>
+    </button>
+
+
+    <!-- Account Dropdown Menu and Icon -->
+    <div class="dropdown">
+  		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+	  		<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+	  		<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+		</svg>
+		</a>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Help</a>
+			<a class="dropdown-item" href="#">Settings</a>
+		    <a class="dropdown-item" href="#">Change Password</a>
+		    <a class="dropdown-item" href="#">Log Out</a>
+		  </div>
+	</div>
+  </div>
+</nav>
+</header>
+<div id="main-content" class="container-fluid">
+	<div id="resolutioncard" class="col-lg-8 col-md-8 col-sm-12">
+		<p>My Resolutions</p>
+		<div class="dropdown">
+  		<button class="btn btn-secondary dropdown-toggle resolutionmenu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
+  			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    			<a class="dropdown-item" href="#">2022</a>
+    			<a class="dropdown-item" href="#">2021</a>
+  			</div>
+		</div>
+			
+		
+  		</div>
+	</div>
+	<div class="myplanscard col-md-4 col-sm-12">
+		<p>My Plans</p>
+		<div class="dropdown">
+  		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
+  			<div class="dropdown-menu plansmenu" aria-labelledby="dropdownMenuButton">
+    			<a class="dropdown-item" href="#">2022</a>
+    			<a class="dropdown-item" href="#">2021</a>
+  			</div>
+		</div>
+		
+	</div>
+	<div class="myprogresscard col-md-8 col-sm-12">
+		<p>My Progress</p>
+		<div class="dropdown">
+  		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</button>
+  			<div class="dropdown-menu progressmenu" aria-labelledby="dropdownMenuButton">
+    			<a class="dropdown-item" href="#">2022</a>
+    			<a class="dropdown-item" href="#">2021</a>
+  			</div>
+		</div>
+		
+	</div>
+	<div class="myschedulecard col-md-4 col-sm-12">
+		<p>My Schedule</p>
+	</div>
+
+	<!-- Timer Dropup Menu -->
+	<div class="btn-group dropup">
+		<button type="button" class="btn btn-default">
+		  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+				<path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+				<path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+			</svg>
+		</button>
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="caret"></span>
+		    <span class="sr-only">Toggle Dropdown</span>
+		</button>
+	    <ul class="dropdown-menu">
+		    <a class="dropdown-item" href="#">5 min</a>
+		    <a class="dropdown-item" href="#">10 min</a>
+    		<a class="dropdown-item" href="#">15 min</a>
+    		<a class="dropdown-item" href="#">30 min</a>
+    		<a class="dropdown-item" href="#">45 min</a>
+    		<a class="dropdown-item" href="#">60 min</a>
+		  </ul>
+	</div>
+</div>
+</div>
+<!-- jQuery first, Poppers.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
