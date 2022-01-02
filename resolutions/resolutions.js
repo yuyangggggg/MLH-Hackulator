@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
 	const input = document.querySelector("#new-res-input");
 	const list_el = document.querySelector("#resolutions");
 
-	form.addEventListener('submit', (e) => {
+	form.addEventListener('submit', () => {
 		e.preventDefault();
 
 		const task = input.value;
@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
 
 		input.value = '';
 
-		task_edit_el.addEventListener('click', (e) => {
+		task_edit_el.addEventListener('click', () => {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {
 				task_edit_el.innerText = "Save";
 				task_input_el.removeAttribute("readonly");
@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
 			}
 		});
 
-		task_delete_el.addEventListener('click', (e) => {
+		task_delete_el.addEventListener('click', () => {
 			list_el.removeChild(task_el);
 		});
 	});
