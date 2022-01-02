@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const User = require("../models/user")  
 const bcrypt = require('bcrypt');
+const passport = require('passport')
 
 //router.use(bodyparser.json());
 //router.use(bodyparser.urlencoded({extended: true}));
@@ -74,7 +75,7 @@ router.post('/signup-submit',(req,res)=>{
                     .then((value)=>{
                         console.log(value)
 
-                        req.flash('success_msg','You have now registered!')
+                        req.flash('success_msg','You have successfully registered. Please verify your email!')
 
                         res.redirect('/login');
                     })
@@ -85,6 +86,18 @@ router.post('/signup-submit',(req,res)=>{
 }  
 })
 
+//user logs in
+router.post('/login-submit',(req,res,next)=>{
+    passport.authenticate('local',{
+        successRedirect : '/dashboard',
+        failureRedirect : '/login',
+        failureFlash : true,
+    })(req,res,next);
+})
+
+router.get('/dashboard',(req,res)=>{
+res.render('../new_dashboard/dashboard2.html');
+})
 
 
 module.exports = router; 

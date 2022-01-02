@@ -1,4 +1,4 @@
-var express = require("express");
+const express = require("express");
 const path = require('path')
 const route = require('./routes/routes.js');
 const mongoose = require('mongoose');
@@ -6,7 +6,9 @@ const bodyparser = require('body-parser');
 const expressEjsLayout = require('express-ejs-layouts')
 const flash = require('connect-flash');
 const session = require('express-session');
+const passport = require('passport');
 
+require("./config/passport")(passport)
 
 //use the application off of express.
 var app = express();
@@ -22,12 +24,15 @@ app.engine('html', require('ejs').renderFile);
 //app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: false}));
 
-///flash messages
+//passport
 app.use(session({
    secret : 'secret',
    resave : true,
    saveUninitialized : true
 }));
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 //use flash
 app.use(flash());
