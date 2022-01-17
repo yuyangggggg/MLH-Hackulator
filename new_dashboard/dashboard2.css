@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-	height: 100px;
+	height: 80px;
 }
 
 .companyname {
@@ -17,27 +17,29 @@ header {
 }
 
 .navbar {
-	height: 100px;
+	height: 80px;
 	position: relative;
 }
 
 /* Resolutions card */
-#resolutioncard {
+div.resolutioncard {
 	top: 5%;
+	height: 400px;
 	background: white;
 	border-radius: 30px;
-	height: 260px!important;
-	margin: 2px;
+	margin-top: 10px;
+	display: inline-block;
 }
 
 
-/* Text in Resolutions Card */
+/* Title in Card */
 .cardtitle {
 	width: 187px;
 	height: 31.74px;
 	left: 3%;
-	top: 8%;
+	top: 5%;
 	position: relative;
+	display: inline-block;
 
 	font-family: Montserrat;
 	font-style: normal;
@@ -49,10 +51,16 @@ header {
 }
 
 
-.resolutionmenu {
+.yearmenus {
 	top: 6%;
-	left: 4%;
+	left: 2%;
 	position: relative;
+
+}
+
+.editbutton {
+	display: inline-block;
+	float: right;
 
 }
 
@@ -60,91 +68,43 @@ header {
 /* My Plans Card */
 
 .myplanscard {
-	height: 260px;
-	float: right;
+	height: 400px;
 	top: 5%;
+	background: white;
+	border-radius: 30px;
+	display: inline-block;
+	margin-top: 30px;
+
+}
+
+
+/* My Progress Card */
+div.myprogresscard {
+	height: 256px;
+	margin-top: 30px;
+	background: white;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+/* Schedules Card */
+
+div.myschedulecard{
+	height: 256px;
+	margin-top: 30px;
 	background: white;
 	border-radius: 30px;
 	display: inline-block;
 
 }
 
-
-
-/* 2022 box */
-
-
-position: absolute;
-width: 65.14px;
-height: 24.53px;
-left: 1069.01px;
-top: 210.25px;
-
-/* 2022 */
-
-
-position: absolute;
-width: 58.31px;
-height: 24.53px;
-left: 1069.01px;
-top: 210.25px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-
-/* Secondary Text */
-
-color: #858585;
-
-
-/* My Progress Card */
-.myprogresscard {
-	height: 256px;
-	top: 700px;
-	background: white;
-	border-radius: 30px;
-}
-
-
-
-/* My Progress Text */
-
-position: absolute;
-width: 117px;
-height: 22px;
-left: 420px;
-top: 718px;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height */
-
-
-color: #000000;
-
-
-/* Schedules Card */
-
-.myschedulecard{
-	width: 480px;
-	height: 256px;
-	left: 900px;
-	top: 688px;
-	background: white;
-	border-radius: 30px;
-
+.timerbutton {
+	float: right;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
 	 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-	 	border: 1px black;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -187,7 +147,6 @@ color: #000000;
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-  	border: 1px black;
     
   }
   .col-md-1 {
@@ -231,8 +190,7 @@ color: #000000;
 
 /********** Small devices only **********/
 @media (max-width: 767px) {
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
-		border: 1px black; 
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{ 
   }
   .col-sm-1 {
     width: 8.33%;
